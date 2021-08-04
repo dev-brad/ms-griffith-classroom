@@ -384,15 +384,16 @@ a {
 }
 
 @media screen and (max-width: 767.5px) {
-  .hero-img {
-    display: none;
-  }
-
   .hero-img-wide {
     border-radius: var(--borderRadius);
     display: flex;
     margin-bottom: 0.5rem;
   }
+
+  .hero-img {
+    display: none;
+  }
+
   .hero-msg h2 {
     font-size: 1.5rem;
   }
