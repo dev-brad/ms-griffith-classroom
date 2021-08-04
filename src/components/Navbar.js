@@ -14,7 +14,7 @@ const NavbarComp = () => {
               size={28}
               title="succulent plant"
             />
-            &nbsp;Ms. Griffith's Class
+            &nbsp;Ms. Griffith's Classroom
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />

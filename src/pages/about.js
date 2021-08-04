@@ -96,7 +96,7 @@ const About = () => {
 
           <Col lg={5} md={5} sm={12}>
             <StaticImage
-              src="../assets/images/gracie-grad.JPG"
+              src="../assets/images/gracie-grad.jpg"
               alt="Ms. Griffith at College Graduation"
               className="hero-img about-img"
               placeholder="tracedSVG"
