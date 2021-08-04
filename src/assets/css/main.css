@@ -308,9 +308,9 @@ a {
   }
 }
 
-@media screen and (max-width: 354px) {
+@media screen and (max-width: 400px) {
   .navbar-brand {
-    font-size: 13.25px;
+    font-size: 13px;
   }
 }
 
@@ -503,6 +503,12 @@ a {
   .class-btn-long {
     display: block;
     margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 377px) {
+  .class-btn-long {
+    padding: 2rem 0;
   }
 }
 
