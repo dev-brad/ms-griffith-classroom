@@ -19,14 +19,14 @@ export default function Home() {
                   alt="Ms. Griffith"
                   className="hero-img"
                   placeholder="tracedSVG"
-                  layout="constrained"
+                  layout="fullWidth"
                 ></StaticImage>
                 <StaticImage
                   src="../assets/images/gracie-main-wide.JPG"
                   alt="Ms. Griffith"
                   className="hero-img-wide"
                   placeholder="tracedSVG"
-                  layout="constrained"
+                  layout="fullWidth"
                 ></StaticImage>
               </Col>
               <Col lg={9} md={8} sm={12} className="hero-msg">
