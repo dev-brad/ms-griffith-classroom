@@ -3,12 +3,14 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/Layout"
 import ClassButtons from "../components/ClassButtons"
 import { Container, Row, Col } from "react-bootstrap"
+import Seo from "../components/Seo"
 
 export default function Home() {
   const classes = ["reading", "ela", "social studies"]
 
   return (
     <Layout>
+      <Seo title="Home" />
       <main>
         <header>
           <Container className="hero">

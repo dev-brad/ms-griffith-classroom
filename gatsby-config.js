@@ -10,8 +10,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gracie Griffith",
-    description: "Class website of Gracie Griffith",
+    title: "Ms. Griffith's Classroom",
+    description: "website for Ms. Griffith's 3rd grade class",
     author: "@bradgriffith",
   },
   plugins: [

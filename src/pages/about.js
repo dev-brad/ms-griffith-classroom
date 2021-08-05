@@ -4,10 +4,12 @@ import Layout from "../components/Layout"
 import { BsChatQuoteFill } from "react-icons/bs"
 import Banner from "../components/Banner"
 import { Container, Row, Col } from "react-bootstrap"
+import Seo from "../components/Seo"
 
 const About = () => {
   return (
     <Layout>
+      <Seo title="About" />
       <Banner icon={<BsChatQuoteFill />} text=" About Me" />
 
       <Container className="hero">
