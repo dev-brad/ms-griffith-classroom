@@ -13,7 +13,7 @@ const Schedule = () => {
         icon={<BsFillClockFill className="banner-icon" />}
         text=" Schedule"
       />
-      <ClassContent subject="N" />
+      <ClassContent subject="N" schedule="Y" />
     </Layout>
   )
 }

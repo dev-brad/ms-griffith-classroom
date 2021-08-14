@@ -435,6 +435,12 @@ a {
   font-weight: bold;
 }
 
+.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 20px;
+}
+
 @media screen and (max-width: 767.5px) {
   .sidebar {
     display: none;
@@ -639,8 +645,80 @@ a {
   padding: 1rem 2.5rem;
 }
 
+.unit-heading {
+  padding-bottom: 1rem;
+}
+
+.unit-heading h3,
+.unit-heading button {
+  display: inline;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.unit-heading button {
+  height: 1.5rem;
+}
+
+.unit-heading a:hover {
+  background-color: var(--gold-500);
+  transition: var(--transition);
+}
+
+.btn-sm::after {
+  padding-bottom: 0.6rem;
+}
+
+.dropdown {
+  display: inline;
+}
+
 @media screen and (max-width: 767.5px) {
   .construction {
     font-size: 2rem;
   }
+}
+
+/*#########*/
+/* HOMEWORK */
+/*#########*/
+
+.hw-item {
+  padding: 1rem 1rem 0;
+}
+
+.hw-link {
+  padding: 0 1rem;
+}
+
+/*#########*/
+/* PHOTO GALLERY */
+/*#########*/
+
+.class-img {
+  border-radius: var(--borderRadius);
+  max-height: 300px;
+}
+
+.caption {
+  text-align: center;
+}
+
+/*#########*/
+/* SCHEDULE */
+/*#########*/
+
+.schedule p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.alt-line {
+  background-color: #d5dbb350;
+  border-radius: var(--borderRadius);
+}
+
+.new-schedule {
+  padding-top: 2.5rem;
 }

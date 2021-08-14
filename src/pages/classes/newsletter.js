@@ -13,7 +13,7 @@ const Newsletter = () => {
         icon={<BsExclamationSquareFill className="banner-icon" />}
         text=" Weekly Newsletter"
       />
-      <ClassContent subject={"N"} />
+      <ClassContent subject={"N"} construct={"Y"} />
     </Layout>
   )
 }

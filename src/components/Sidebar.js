@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const Sidebar = () => {
   return (
-    <aside className="sidebar">
+    <aside className="sidebar sticky">
       <h3 className="sb-heading">Class Info</h3>
       <Link
         to="/classes/reading"
