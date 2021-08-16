@@ -4,14 +4,14 @@ const SocialStudiesUnits = () => {
   const units = useStaticQuery(
     graphql`
       query {
-        allContentfulHomework(filter: { subject: { eq: "Social Studies" } }) {
+        allContentfulUnits(filter: { subject: { eq: "Social Studies" } }) {
           unit: distinct(field: unitNumber)
         }
       }
     `
   )
 
-  return units.allContentfulHomework.unit
+  return units.allContentfulUnits.unit
 }
 
 export default SocialStudiesUnits

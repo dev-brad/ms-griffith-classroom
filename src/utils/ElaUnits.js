@@ -4,14 +4,14 @@ const ElaUnits = () => {
   const units = useStaticQuery(
     graphql`
       query {
-        allContentfulHomework(filter: { subject: { eq: "ELA" } }) {
+        allContentfulUnits(filter: { subject: { eq: "ELA" } }) {
           unit: distinct(field: unitNumber)
         }
       }
     `
   )
 
-  return units.allContentfulHomework.unit
+  return units.allContentfulUnits.unit
 }
 
 export default ElaUnits

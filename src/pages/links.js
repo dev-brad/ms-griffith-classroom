@@ -52,6 +52,12 @@ const Links = () => {
               Course of Study
             </a>
           </li>
+          <li>
+            <a href="https://www.jostens.com/" target="_blank" rel="noreferrer">
+              <FaArrowAltCircleRight className="link-icon" /> &nbsp;Buy a
+              Yearbook
+            </a>
+          </li>
         </ul>
       </Container>
     </Layout>

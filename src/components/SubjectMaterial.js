@@ -3,6 +3,7 @@ import React from "react"
 import { useState } from "react"
 import { Container, Row, Col, Dropdown } from "react-bootstrap"
 import Homework from "./Homework"
+import Units from "./Units"
 import readingUnits from "../utils/ReadingUnits"
 import elaUnits from "../utils/ElaUnits"
 import socialStudiesUnits from "../utils/SocialStudiesUnits"
@@ -28,10 +29,10 @@ const SubjectMaterial = ({ subject }) => {
 
   const [unitDisp, setUnit] = useState(maxUnit)
 
-  const [option, setOption] = useState("M")
+  const [option, setOption] = useState("U")
 
   const toggleM = () => {
-    setOption("M")
+    setOption("U")
   }
   const toggleH = () => {
     setOption("H")
@@ -66,7 +67,7 @@ const SubjectMaterial = ({ subject }) => {
           <Col>
             <button
               className={
-                option === "M" ? "mt-heading mt-selected" : "mt-heading"
+                option === "U" ? "mt-heading mt-selected" : "mt-heading"
               }
               onClick={toggleM}
             >
@@ -86,6 +87,9 @@ const SubjectMaterial = ({ subject }) => {
         </Row>
         <div className={option === "H" ? "hw-section" : "hide-section"}>
           <Homework subject={subject} unit={unitDisp} />
+        </div>
+        <div className={option === "U" ? "hw-section" : "hide-section"}>
+          <Units subject={subject} unit={unitDisp} />
         </div>
       </Container>
     </div>

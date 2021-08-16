@@ -106,27 +106,25 @@ const Photos = ({ data }) => {
                   const { id, title, caption, date, image } = photo
                   const imagePath = getImage(image)
 
-                  {
-                    if (date.substring(0, 7) === monthSelected) {
-                      return (
-                        <Col key={id} md={6} sm="12">
-                          <a
-                            href={image.file.url}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            <GatsbyImage
-                              image={imagePath}
-                              className="class-img"
-                              alt={title}
-                            />
-                          </a>
-                          <p className="caption text-small">{caption}</p>
-                        </Col>
-                      )
-                    } else {
-                      return <></>
-                    }
+                  if (date.substring(0, 7) === monthSelected) {
+                    return (
+                      <Col key={id} md={6} sm="12">
+                        <a
+                          href={image.file.url}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          <GatsbyImage
+                            image={imagePath}
+                            className="class-img"
+                            alt={title}
+                          />
+                        </a>
+                        <p className="caption text-small">{caption}</p>
+                      </Col>
+                    )
+                  } else {
+                    return <></>
                   }
                 })}
               </Row>
