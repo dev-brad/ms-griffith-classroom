@@ -5,7 +5,7 @@ const Units = ({ subject, unit }) => {
   const { units } = useStaticQuery(
     graphql`
       query {
-        units: allContentfulUnits {
+        units: allContentfulUnits(sort: { fields: publishDate, order: DESC }) {
           nodes {
             id
             subject

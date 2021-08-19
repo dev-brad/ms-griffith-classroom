@@ -16,6 +16,8 @@ const Homework = ({ subject, unit }) => {
             details {
               details
             }
+            linkTitle
+            link
             images {
               id
               title
@@ -50,6 +52,12 @@ const Homework = ({ subject, unit }) => {
             {assignDate.getDate()}/{assignDate.getFullYear()} &nbsp;| &nbsp;
             <b>Due Date: </b>
             {dueDate.getMonth() + 1}/{dueDate.getDate()}/{dueDate.getFullYear()}
+          </p>
+
+          <p>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              {item.linkTitle}
+            </a>
           </p>
           {images.map(image => {
             return (

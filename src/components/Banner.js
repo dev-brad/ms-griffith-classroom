@@ -26,7 +26,14 @@ const Banner = ({ icon, text }) => {
   //   console.log(bgImage)
 
   return (
-    <BgImage image={bgImage} className="banner bgImage">
+    <BgImage
+      image={bgImage}
+      className={
+        text === " English Language Arts"
+          ? "banner banner-txt-sm bgImage"
+          : "banner bgImage"
+      }
+    >
       {icon}
       {text}
     </BgImage>

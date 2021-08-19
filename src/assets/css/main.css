@@ -580,9 +580,13 @@ a {
   }
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 376px) {
   .banner {
     font-size: 1.5rem;
+  }
+
+  .banner-txt-sm {
+    font-size: 1.4rem;
   }
 }
 
@@ -689,7 +693,8 @@ a {
 }
 
 .hw-link {
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
+  display: block;
 }
 
 /*#########*/
