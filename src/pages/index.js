@@ -6,7 +6,7 @@ import { Container, Row, Col } from "react-bootstrap"
 import Seo from "../components/Seo"
 
 export default function Home() {
-  const classes = ["reading", "ela", "social studies"]
+  const classes = ["reading", "social studies"]
 
   return (
     <Layout>

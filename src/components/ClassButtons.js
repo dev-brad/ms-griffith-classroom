@@ -11,11 +11,7 @@ const ClassButtons = ({ classText }) => {
     graphql`
       query {
         images: allFile(
-          filter: {
-            relativePath: {
-              in: ["reading.jpg", "rela.jpg", "social-studies.jpg"]
-            }
-          }
+          filter: { relativePath: { in: ["rela.jpg", "social-studies.jpg"] } }
           sort: { fields: absolutePath, order: ASC }
         ) {
           nodes {
@@ -49,15 +45,16 @@ const ClassButtons = ({ classText }) => {
             const url = "/classes/" + slug
             i += 1
             return (
-              <Col lg={4} md={12} key={id}>
+              <Col lg={6} md={12} key={id}>
                 <Link to={url}>
                   <BgImage
                     image={image}
-                    className={
-                      text === "social studies"
-                        ? "class-btn-long bgImage"
-                        : "class-btn bgImage"
-                    }
+                    // className={
+                    //   text === "social studies"
+                    //     ? "class-btn-long bgImage"
+                    //     : "class-btn bgImage"
+                    // }
+                    className="class-btn bgImage"
                   >
                     {text}
                   </BgImage>

@@ -23,7 +23,6 @@ const Banner = ({ icon, text }) => {
   )
 
   const bgImage = getImage(image.childImageSharp)
-  //   console.log(bgImage)
 
   return (
     <BgImage

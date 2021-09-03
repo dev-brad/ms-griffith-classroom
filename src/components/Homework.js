@@ -5,7 +5,9 @@ const Homework = ({ subject, unit }) => {
   const { homework } = useStaticQuery(
     graphql`
       query {
-        homework: allContentfulHomework {
+        homework: allContentfulHomework(
+          sort: { fields: assignmentDate, order: DESC }
+        ) {
           nodes {
             id
             subject

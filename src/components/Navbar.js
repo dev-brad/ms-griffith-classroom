@@ -35,13 +35,13 @@ const NavbarComp = () => {
               >
                 reading
               </Link>
-              <Link
+              {/* <Link
                 to="/classes/ela"
                 activeClassName="active-drop-link"
                 className="drop-link"
               >
                 english language arts
-              </Link>
+              </Link> */}
               <Link
                 to="/classes/social-studies"
                 activeClassName="active-drop-link"
@@ -53,11 +53,11 @@ const NavbarComp = () => {
               <NavDropdown.Divider />
 
               <Link
-                to="/classes/newsletter"
+                to="/classes/announcements"
                 activeClassName="active-drop-link"
                 className="drop-link"
               >
-                weekly newsletter
+                announcements
               </Link>
               <Link
                 to="/classes/schedule"

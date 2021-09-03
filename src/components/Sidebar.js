@@ -12,13 +12,13 @@ const Sidebar = () => {
       >
         Reading
       </Link>
-      <Link
+      {/* <Link
         to="/classes/ela"
         activeClassName="sb-active-link"
         className="sb-link"
       >
         English Language Arts
-      </Link>
+      </Link> */}
       <Link
         to="/classes/social-studies"
         activeClassName="sb-active-link"
@@ -28,11 +28,11 @@ const Sidebar = () => {
       </Link>
       <hr />
       <Link
-        to="/classes/newsletter"
+        to="/classes/announcements"
         activeClassName="sb-active-link"
         className="sb-link"
       >
-        Weekly Newsletter
+        Announcements
       </Link>
       <Link
         to="/classes/schedule"

@@ -2,10 +2,10 @@ import React from "react"
 import { Container, Row, Col } from "react-bootstrap"
 import Sidebar from "../components/Sidebar"
 import SubjectMaterial from "./SubjectMaterial"
-import Construction from "./Construction"
+import Announcements from "./Announcements"
 import Schedule from "./Schedule"
 
-const ClassContent = ({ subject, schedule, construct }) => {
+const ClassContent = ({ subject, schedule, announce }) => {
   return (
     <Container className="hero">
       <Row>
@@ -16,11 +16,11 @@ const ClassContent = ({ subject, schedule, construct }) => {
           <section className={subject === "N" ? "hide-section" : ""}>
             <SubjectMaterial subject={subject} />
           </section>
-          <div className={construct === "Y" ? "" : "hide-section"}>
-            <Construction />
-          </div>
           <div className={schedule === "Y" ? "" : "hide-section"}>
             <Schedule />
+          </div>
+          <div className={announce === "Y" ? "" : "hide-section"}>
+            <Announcements />
           </div>
         </Col>
       </Row>

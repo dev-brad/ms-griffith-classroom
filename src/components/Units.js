@@ -15,6 +15,8 @@ const Units = ({ subject, unit }) => {
             description {
               description
             }
+            linkTitle
+            link
             resources {
               id
               title
@@ -41,6 +43,11 @@ const Units = ({ subject, unit }) => {
           <hr />
           <h4>{item.title}</h4>
           <p>{item.description.description}</p>
+          <p>
+            <a href={item.link} target="_blank" rel="noreferrer">
+              {item.linkTitle}
+            </a>
+          </p>
           {resources.map(resource => {
             return (
               <a
